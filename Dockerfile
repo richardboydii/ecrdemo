@@ -3,6 +3,8 @@ MAINTAINER DevOps "richard.boydii@gmail.com"
 
 LABEL version=0.0
 
+#RUN apk add --update nginx && rm -rf /var/cache/apk/*
+
 WORKDIR /usr/local/bin
 
 ONBUILD ADD . /src

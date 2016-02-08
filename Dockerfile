@@ -5,6 +5,4 @@ LABEL version=0.0
 
 WORKDIR /usr/local/bin
 
-RUN apk add --update nodejs && rm -rf /var/cache/apk/*
-
 ONBUILD ADD . /src
